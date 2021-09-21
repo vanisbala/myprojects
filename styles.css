@@ -1,0 +1,386 @@
+body {
+  /* background-image: linear-gradient(
+    to right,
+    rgb(0, 204, 204),
+    rgb(102, 255, 102)
+  ); */
+  background-color: rgb(245, 239, 229);
+}
+.flex-parent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 150px;
+  left: auto;
+  height: 100%;
+}
+
+.flex-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  position: relative; 
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;  
+  background-color: rgb(70, 173, 204) !important;
+  color: white;
+  box-shadow: 0 3px 10px rgb(0 1 1 / 0.8);  
+}
+
+.flex-parent h3 {
+  text-align: center;
+  font-family: "Cinzel", serif;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(36, 115, 151) !important;
+  color: white;
+  /* font-family: 'Limelight', cursive; */
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: xx-large;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+}
+
+
+.btn {
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5%;
+  font-size: 14px;
+  /* margin: 4px 2px; */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(14, 41, 99);
+  border: 2px solid rgb(14, 41, 99);
+  box-shadow: 0 3px 10px rgb(0 1 1 / 0.8);  
+}
+
+
+.btn:hover {
+  background-color: rgb(14, 41, 99);
+  color: white;
+}
+
+.pacman-box {
+  margin: auto;
+  position: relative;
+  border-style: solid;
+  background-color: rgb(14, 41, 99);
+  width: 60px;
+  height: 60px;
+  display: flex;
+}
+.pacman {
+  margin: auto;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: yellow;
+}
+
+.pacman-eye {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 10px;
+  left: 25px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.pacman-mouth {
+  /* background: #000; */
+  background: rgb(14, 41, 99);
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+}
+
+.eye {
+  margin: auto;
+  width: 25px;
+  height: 10px;
+  border-radius: 60%;
+  background-color: white;
+  border-style: none;
+  position: relative;
+  align-items: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.eye-box {
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  border-style: solid;
+  background-color: rgb(14, 41, 99);
+  display: flex;
+  position: relative;
+}
+.eyeball {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+.bus-box {
+  margin: auto;
+  position: relative;
+  border-style: solid;
+  background-color: rgb(14, 41, 99);
+  width: 60px;
+  height: 60px;
+  display: flex;
+}
+
+.bus {
+  margin: auto;
+  position: relative;
+  background-color: goldenrod;
+  border-radius: 10%;
+  width: 30px;
+  height: 30px;
+}
+
+.bus-window {
+  position: absolute;
+}
+.win1 {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5%;
+  background-color: whitesmoke;
+}
+.win2 {
+  position: absolute;
+  top: 2px;
+  left: 18px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5%;
+  background-color: whitesmoke;
+}
+
+.bus-lines {
+  position: absolute;
+}
+.line1 {
+  position: absolute;
+  top: 15px;
+  left: 2px;
+  width: 25px;
+  height: 2px;
+  border-radius: 10%;
+  background-color: white;
+}
+.line2 {
+  position: absolute;
+  top: 18px;
+  left: 2px;
+  width: 25px;
+  height: 2px;
+  border-radius: 10%;
+  background-color: white;
+}
+
+.bus-hdlight {
+  position: absolute;
+}
+.hdlight1 {
+  position: absolute;
+  top: 20px;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+.hdlight2 {
+  position: absolute;
+  top: 20px;
+  left: 21px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.bus-wheel {
+  position: absolute;
+}
+.wheel1 {
+  position: absolute;
+  top: 28px;
+  left: 3px;
+  width: 5px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: black;
+}
+.wheel2 {
+  position: absolute;
+  top: 28px;
+  left: 22px;
+  width: 5px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: black;
+}
+
+.tictactoe-box {
+  margin: auto;
+  position: relative;
+  border-style: solid;
+  background-color: rgb(14, 41, 99);
+  width: 60px;
+  height: 60px;
+  display: flex;
+}
+.tictactoe-box .line1 {
+  position: absolute;
+  top: 18px;
+  left: 2px;
+  width: 55px;
+  height: 2px;
+  border-radius: 10%;
+  background-color: white;
+}
+.tictactoe-box .line2 {
+  position: absolute;
+  top: 40px;
+  left: 2px;
+  width: 55px;
+  height: 2px;
+  border-radius: 10%;
+  background-color: white;
+}
+.tictactoe-box .line3 {
+  position: absolute;
+  top: 2px;
+  left: 18px;
+  width: 2px;
+  height: 55px;
+  border-radius: 10%;
+  background-color: white;
+}
+.tictactoe-box .line4 {
+  position: absolute;
+  top: 2px;
+  left: 40px;
+  width: 2px;
+  height: 55px;
+  border-radius: 10%;
+  background-color: white;
+}
+
+.ball-box {
+  margin: auto;
+  position: relative;
+  border-style: solid;
+  background-color: rgb(14, 41, 99);
+  width: 60px;
+  height: 60px;
+  display: flex;
+}
+
+.ball-box .ball1 {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: yellow;
+}
+
+.ball-box .ball2 {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(5, 221, 221);
+}
+
+.ball-box .ball3 {
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(214, 7, 163);
+}
+
+.pattern-box {
+  margin: auto;
+  position: relative;
+  border-style: solid;
+  background-color: rgb(14, 41, 99);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 10px;
+}
+
+.pattern-box .pattern {
+  position: absolute;
+  width: 60px;
+  height: 15px;
+  border-radius: 3%;
+  background-color: white;
+  color: navy;
+}
+
+@media screen and (min-width:320px) and (max-width: 600px) {
+  .flex-child {
+    width: 90%;
+  }
+  .body {
+    background-color: rgb(5, 221, 221);
+  }
+}
+@media screen and (min-width:601px) and (max-width: 800px) {
+  .flex-child {
+    width: 45%;
+  }
+  .body {
+    background-color: silver;
+  }
+}
+@media screen and (min-width:801px)  {
+  .flex-child {
+    width: 30%;
+  }
+}
+
