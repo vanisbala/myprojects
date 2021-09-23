@@ -1,11 +1,27 @@
 body {
-  /* background-image: linear-gradient(
-    to right,
-    rgb(0, 204, 204),
-    rgb(102, 255, 102)
-  ); */
   background-color: rgb(245, 239, 229);
 }
+
+.content {
+  grid-area: content;
+  position: relative;
+}
+
+.header {
+  grid-area: header;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 475px));
+  grid-template-areas:
+  "header  header  header"
+  "content content content";
+  justify-content: center;
+  align-content: center;
+}
+
 .flex-parent {
   max-width: 1200px;
   margin: 0 auto;
